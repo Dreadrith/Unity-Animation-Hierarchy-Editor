@@ -2,7 +2,7 @@
 
 A Unity tool for easily modifying animation hierarchy paths within animation clips.
 
-<a href="https://github.com/s-m-k/Unity-Animation-Hierarchy-Editor">Originally created by s-m-k</a>
+### [Download From Here](https://vpm.dreadscripts.com/)
 
 ## Features
 
@@ -41,4 +41,5 @@ A Unity tool for easily modifying animation hierarchy paths within animation cli
 - Use regex mode cautiously for advanced path replacements.
 
 ### Thank You
+<a href="https://github.com/s-m-k/Unity-Animation-Hierarchy-Editor">Originally created by s-m-k</a>
 If you enjoy Animation Hierarchy Editor, please consider [supporting me ♡](https://ko-fi.com/Dreadrith)!
