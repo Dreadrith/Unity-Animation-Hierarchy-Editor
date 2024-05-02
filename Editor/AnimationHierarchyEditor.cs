@@ -27,7 +27,7 @@ public class AnimationHierarchyEditor : EditorWindow {
     private string newPathValue = "SomeNewObject/Root";
     #endregion
 
-	[MenuItem("Window/Animation Hierarchy Editor")]
+	[MenuItem("DreadTools/Animation Hierarchy Editor")]
 	static void ShowWindow() => GetWindow<AnimationHierarchyEditor>();
 
     void OnSelectionChange()
