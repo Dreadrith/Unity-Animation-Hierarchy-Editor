@@ -16,7 +16,7 @@ A Unity tool for easily modifying animation hierarchy paths within animation cli
 ## How to Use
 
 1. Open the Animation Hierarchy Editor:
-   - Navigate to `Window > Animation Hierarchy Editor` to open the editor window.
+   - Navigate to `DreadTools > Animation Hierarchy Editor` to open the editor window.
 
 2. Select Animation Clips:
    - Choose the animation clip(s) you want to modify by selecting them in the project view.
