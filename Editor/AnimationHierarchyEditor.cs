@@ -27,10 +27,13 @@ public class AnimationHierarchyEditor : EditorWindow {
     private string newPathValue = "SomeNewObject/Root";
     #endregion
 
-	[MenuItem("DreadTools/Utility/Animation Hierarchy Editor")]
-	static void ShowWindow() => GetWindow<AnimationHierarchyEditor>();
+    [MenuItem("DreadTools/Utility/Animation Hierarchy Editor")]
+    public static void ShowWindow()
+    {
+        GetWindow<AnimationHierarchyEditor>(false, "Animation Hierarchy Editor", true).titleContent.image = EditorGUIUtility.IconContent("AnimationClip Icon").image;
+    }
 
-    void OnSelectionChange()
+    public void OnSelectionChange()
     {
         animationClips = Selection.GetFiltered<AnimationClip>(SelectionMode.Assets);
         FillModel();
@@ -38,7 +41,7 @@ public class AnimationHierarchyEditor : EditorWindow {
     }
 
 
-	void OnGUI()
+    public void OnGUI()
     {
         if (animationClips == null || animationClips.Length == 0)
         {
@@ -94,7 +97,7 @@ public class AnimationHierarchyEditor : EditorWindow {
         GUILayout.EndScrollView();
     }
 
-    void DisplayPathItems()
+    public void DisplayPathItems()
     {
         GUIStyle resetButtonStyle = new GUIStyle() {contentOffset = new Vector2(0, 3.5f)};
         for (int i = 0; i < pathsKeys.Count; i++)
@@ -167,7 +170,7 @@ public class AnimationHierarchyEditor : EditorWindow {
 		}
 	}
 
-	void UpdatePath(string oldPath, string newPath, bool matchWholeWord)
+    public void UpdatePath(string oldPath, string newPath, bool matchWholeWord)
     {
         if (oldPath == newPath) return;
 
