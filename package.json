@@ -1,7 +1,7 @@
 {
   "name": "com.dreadscripts.animationhierarchyeditor",
   "displayName": "DreadScripts - AnimationHierarchyEditor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Unity tool for easily modifying animation hierarchy paths within animation clips.",
   "gitDependencies": {},
   "vpmDependencies": {},
@@ -12,5 +12,6 @@
   },
   "legacyFolders": {},
   "legacyFiles": {},
-  "type": "tool"
+  "type": "tool",
+  "unity": "2019.4"
 }
